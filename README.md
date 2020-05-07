@@ -2,6 +2,8 @@
 
 This repository collects my attempts to train a machine learning algorithm to detect whether my cat is in the house using only camera images.
 
+<img src="https://github.com/oliparson/cat-detection/blob/master/animation.gif" width="40%">
+
 You can follow my progress on the [Non-intrusive Cat Monitoring blog](https://nonintrusivecatmonitoring.blogspot.com/).
 
 The diagram below gives an overview of how the logic is spread across the Raspberry Pi and Google Cloud.
