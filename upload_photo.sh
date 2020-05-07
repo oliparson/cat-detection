@@ -5,7 +5,7 @@ do
 	FILENAME="/home/pi/Pictures/$DATE.jpg"
 
 	# Take photo and save to Raspberry Pi SD card
-	raspistill -o $FILENAME
+	raspistill -rot 180 -o $FILENAME
 
 	# Upload photo to Google Cloud Storage bucket
 	curl -X POST --data-binary @$FILENAME \
