@@ -8,7 +8,7 @@ do
 	raspistill -rot 180 -w 800 -h 600 -o $FILENAME
 
 	# Upload photo to Google Cloud Storage bucket
-	response=$(curl -X POST --data-binary @$FILENAME \
+	response=$(curl --silent --show-error -X POST --data-binary @$FILENAME \
 	-H "Authorization: Bearer $OAUTH2_TOKEN" \
 	-H "Content-Type: image/jpg" \
 	"https://storage.googleapis.com/upload/storage/v1/b/catflap-photos-raw/o?uploadType=media&name=$DATE.jpg")
@@ -18,6 +18,7 @@ do
 	
 	# Recreate auth code if it's expired
 	error_code=$(echo $response | jq -r '.error.code')
+	echo $DATE $error_code
 	if [ "$error_code" == "401" ]
 	then
 		echo Renewing gcloud oauth token
