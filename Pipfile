@@ -10,6 +10,7 @@ ipykernel = "*"
 matplotlib = "*"
 google-cloud-storage = "*"
 pillow = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.5"
