@@ -27,7 +27,7 @@ do
 	# Recreate auth code if it's expired
 	error_code=$(echo $response | jq -r '.error.code')
 	echo $DATE $error_code
-	if [ "$error_code" == "401" ]
+	if [ "$error_code" = "401" ]
 	then
 		echo Renewing gcloud oauth token
 		OAUTH2_TOKEN=$(gcloud auth print-access-token)
