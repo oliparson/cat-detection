@@ -15,4 +15,13 @@ do
 
 	# Remove photo from Raspberry Pi SD card
 	rm $FILENAME
+
+	# Quit after 8pm
+	hour=$(date +"%-H")
+	echo $hour
+	if (( $hour > 19 ))
+	then
+		echo end of log
+		exit 1
+	fi
 done
