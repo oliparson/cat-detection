@@ -18,7 +18,6 @@ do
 
 	# Quit after 8pm
 	hour=$(date +"%-H")
-	echo $hour
 	if (( $hour > 19 ))
 	then
 		echo end of log
