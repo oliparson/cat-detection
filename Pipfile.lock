@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a5350e9cfc4e497f3c0625eb79ae4153202532fee786ae569fbd19f1f71a8bd9"
+            "sha256": "657ae64b3576cbbf8b2712b86cd5676a60199f026ed39934414a0d8bccea106b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -58,6 +58,21 @@
             ],
             "version": "==4.4.2"
         },
+        "fsspec": {
+            "hashes": [
+                "sha256:1b540552c93b47e83c568e87507d6e02993e6d1b30bc7285f2336c81c5014103",
+                "sha256:9f0e3f4915b463b94c5788afa37b89d2c29c696f0d4da7d05f9cb5b17c8c84f7"
+            ],
+            "version": "==0.7.3"
+        },
+        "gcsfs": {
+            "hashes": [
+                "sha256:26403295ea32c04828bc1e516834468ba8e5149ab737fb34738f5a4c921706c8",
+                "sha256:75c47075a6093ce0f5c181883aec1b059ab62a6446019fdf91099dc28e515bf9"
+            ],
+            "index": "pypi",
+            "version": "==0.6.2"
+        },
         "google-api-core": {
             "hashes": [
                 "sha256:c0e430658ed6be902d7ba7095fb0a9cac810270d71bf7ac4484e76c300407aae",
@@ -71,6 +86,13 @@
                 "sha256:23cfeeb71d98b7f51cd33650779d35291aeb8b23384976d497805d12eefc6e9b"
             ],
             "version": "==1.14.2"
+        },
+        "google-auth-oauthlib": {
+            "hashes": [
+                "sha256:88d2cd115e3391eb85e1243ac6902e76e77c5fe438b7276b297fbe68015458dd",
+                "sha256:a92a0f6f41a0fb6138454fbc02674e64f89d82a244ea32f98471733c8ef0e0e1"
+            ],
+            "version": "==0.4.1"
         },
         "google-cloud-core": {
             "hashes": [
@@ -236,6 +258,13 @@
                 "sha256:f22273dd6a403ed870207b853a856ff6327d5cbce7a835dfa0645b3fc00273ec"
             ],
             "version": "==1.18.4"
+        },
+        "oauthlib": {
+            "hashes": [
+                "sha256:bee41cc35fcca6e988463cacc3bcb8a96224f470ca547e697b604cc697b2f889",
+                "sha256:df884cd6cbe20e32633f1db1072e9356f53638e4361bef4e8b03c9127c9328ea"
+            ],
+            "version": "==3.1.0"
         },
         "pandas": {
             "hashes": [
@@ -431,6 +460,13 @@
                 "sha256:b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"
             ],
             "version": "==2.23.0"
+        },
+        "requests-oauthlib": {
+            "hashes": [
+                "sha256:7f71572defaecd16372f9006f33c2ec8c077c3cfa6f5911a9a90202beb513f3d",
+                "sha256:b4261601a71fd721a8bd6d7aa1cc1d6a8a93b4a9f5e96626f8e4d91e8beeaa6a"
+            ],
+            "version": "==1.3.0"
         },
         "rsa": {
             "hashes": [
