@@ -12,6 +12,7 @@ google-cloud-storage = "*"
 pillow = "*"
 pandas = "*"
 gcsfs = "*"
+tensorflow = "*"
 
 [requires]
 python_version = "3.5"
