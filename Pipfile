@@ -13,6 +13,8 @@ pillow = "*"
 pandas = "*"
 gcsfs = "*"
 tensorflow = "==2.1.0"
+google-api-python-client = "*"
+google-api-core = "*"
 
 [requires]
 python_version = "3.7"
