@@ -105,7 +105,7 @@ def hello_world(request):
         model_name = 'logistic_regression_v2', 
         region = 'europe-west2',
         version_name='logistic_regression_v2', 
-        max_worker_count=20)
+        max_worker_count=1)
 
     # Submit batch prediction job
     project_id = 'projects/{}'.format(project)
