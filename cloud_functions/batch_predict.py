@@ -52,7 +52,7 @@ def make_batch_job_body(project_name, input_paths, output_path,
 
     return body
 
-def hello_world(request):
+def trigger_batch_predict(request):
 
 
     # Define bucket and blob prefix
