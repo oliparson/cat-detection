@@ -16,6 +16,8 @@ google-api-python-client = "*"
 google-api-core = "*"
 Pillow = "*"
 Flask = "==1.1.2"
+google-auth = "==1.19.2"
+requests = "==2.24.0"
 
 [requires]
 python_version = "3.7"

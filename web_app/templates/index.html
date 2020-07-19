@@ -4,14 +4,47 @@
   <title>Datastore and Firebase Auth Example</title>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
   <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css">
 </head>
 <body>
 
-  <h1>Positive cat detections</h1>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
 
-  {% for time in times %}
-    <p><a href="{{ time }}">{{ time }}</a></p>
-  {% endfor %}
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyA03H22DHvtCbJjnUqKPWK9Ouc6z5Ipgdw",
+      authDomain: "optimum-treat-262616.firebaseapp.com",
+      databaseURL: "https://optimum-treat-262616.firebaseio.com",
+      projectId: "optimum-treat-262616",
+      storageBucket: "optimum-treat-262616.appspot.com",
+      messagingSenderId: "288079484583",
+      appId: "1:288079484583:web:f07da3fd1dd8f41890ad82"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <div id="firebaseui-auth-container"></div>
+
+  <div id="date-links" hidden=true>
+      <p>
+        <a href="/{{ prev_date }}">{{ prev_date }}</a>
+        <a href="/{{ next_date }}">{{ next_date }}</a>
+      </p>
+  </div>
+
+  <div id="login-info" hidden=true>
+    {% for blob in blobs %}
+      <p><a href="{{ blob }}">{{ blob }}</a></p>
+    {% endfor %}
+  </div>
+
+  <button id="sign-out" hidden=true>Sign Out</button>
 
 </body>
 </html>
