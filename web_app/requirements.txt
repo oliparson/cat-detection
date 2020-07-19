@@ -1,1 +1,6 @@
 Flask==1.1.2
+pandas
+gcsfs
+google-cloud-storage
+google-api-python-client
+google-api-core
