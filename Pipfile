@@ -9,12 +9,13 @@ verify_ssl = true
 ipykernel = "*"
 matplotlib = "*"
 google-cloud-storage = "*"
-pillow = "*"
 pandas = "*"
 gcsfs = "*"
 tensorflow = "==2.1.0"
 google-api-python-client = "*"
 google-api-core = "*"
+Pillow = "*"
+Flask = "==1.1.2"
 
 [requires]
 python_version = "3.7"
